@@ -19,7 +19,12 @@
 #include <linux/earlysuspend.h>
 #endif
 
-
+#ifdef CONFIG_MACH_T0_CHN_CU_DUOS
+#undef CONFIG_MACH_T0_CHN_CU_DUOS
+#endif
+#ifndef CONFIG_MACH_T0_EUR_OPEN
+#define CONFIG_MACH_T0_EUR_OPEN
+#endif
 
 #define NAMEBUF 12
 #define WACNAME "WAC_I2C_EMR"
