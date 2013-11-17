@@ -20,13 +20,6 @@
 #include <plat/cpu.h>
 #include <mach/pmu.h>
 
-#ifdef CONFIG_MACH_T0_CHN_CU_DUOS
-#undef CONFIG_MACH_T0_CHN_CU_DUOS
-#endif
-#ifndef CONFIG_MACH_T0_EUR_OPEN
-#define CONFIG_MACH_T0_EUR_OPEN
-#endif
-
 struct gpio_init_data {
 	uint num;
 	uint cfg;
