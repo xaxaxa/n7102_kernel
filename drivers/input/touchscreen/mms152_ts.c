@@ -4089,6 +4089,11 @@ static int __devinit mms_ts_probe(struct i2c_client *client,
 				0, (info->max_x)-1, 0, 0);
 	input_set_abs_params(input_dev, ABS_MT_POSITION_Y,
 				0, (info->max_y)-1, 0, 0);
+	
+	input_set_abs_params(input_dev, ABS_X,
+				0, (info->max_x)-1, 0, 0);
+	input_set_abs_params(input_dev, ABS_Y,
+				0, (info->max_y)-1, 0, 0);
 	if (info->panel == 'M') {
 		input_set_abs_params(input_dev, ABS_MT_WIDTH_MAJOR,
 					0, MAX_WIDTH, 0, 0);
