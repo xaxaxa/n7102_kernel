@@ -43,9 +43,9 @@
 #include "gpio-rev00-gc1.h"
 #elif defined(CONFIG_MACH_T0_CHN_CTC)
 #include "gpio-rev00-t0ctc.h"
-#elif defined(CONFIG_MACH_T0_CHN_CU_DUOS) || \
-	defined(CONFIG_MACH_T0_CHN_OPEN_DUOS)
-#include "gpio-rev00-t0cu-duos.h"
+//#elif defined(CONFIG_MACH_T0_CHN_CU_DUOS) || \
+//	defined(CONFIG_MACH_T0_CHN_OPEN_DUOS)
+//#include "gpio-rev00-t0cu-duos.h"
 #elif defined(CONFIG_MACH_T0) || defined(CONFIG_MACH_SLP_T0_LTE)
 #include "gpio-rev00-t0.h"
 #elif defined(CONFIG_MACH_BAFFIN)

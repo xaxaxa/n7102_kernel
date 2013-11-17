@@ -295,8 +295,8 @@ extern int s3c_gpio_slp_setpull_updown(unsigned int pin, unsigned int config);
 #define GPIO_BARCODE_SDA_1_8V EXYNOS4_GPF0(0)
 #define GPIO_BARCODE_SCL_1_8V	EXYNOS4_GPF0(1)
 
-#if defined(CONFIG_MACH_T0_CHN_CU_DUOS) \
-	|| defined(CONFIG_MACH_T0_CHN_OPEN_DUOS)
+#if defined(CONFIG_MACH_T0_CHN_CU_DUOS_ASDFG) \
+	|| defined(CONFIG_MACH_T0_CHN_OPEN_DUOS_ASDFG)
 #define GPIO_FPGA_CDONE		EXYNOS4_GPF3(4)
 #define GPIO_FPGA_CRESET_B	EXYNOS4_GPF3(5)
 #else
