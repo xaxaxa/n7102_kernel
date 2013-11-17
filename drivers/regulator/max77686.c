@@ -32,6 +32,13 @@
 #include <linux/mfd/max77686.h>
 #include <linux/mfd/max77686-private.h>
 
+#ifdef CONFIG_MACH_T0_CHN_CU_DUOS
+#undef CONFIG_MACH_T0_CHN_CU_DUOS
+#endif
+#ifndef CONFIG_MACH_T0_EUR_OPEN
+#define CONFIG_MACH_T0_EUR_OPEN
+#endif
+
 //#define MAX77686_DEBUG
 
 #define PMIC_DEBUG KERN_DEBUG

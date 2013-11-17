@@ -45,7 +45,13 @@
 #include "i2s.h"
 #include "s3c-i2s-v2.h"
 #include "../codecs/wm8994.h"
-
+ 
+#ifdef CONFIG_MACH_T0_CHN_CU_DUOS
+#undef CONFIG_MACH_T0_CHN_CU_DUOS
+#endif
+#ifndef CONFIG_MACH_T0_EUR_OPEN
+#define CONFIG_MACH_T0_EUR_OPEN
+#endif
 
 #define MIDAS_DEFAULT_MCLK1	24000000
 #define MIDAS_DEFAULT_MCLK2	32768

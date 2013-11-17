@@ -13,6 +13,13 @@
 #ifndef __ASM_ARCH_GPIO_MIDAS_H
 #define __ASM_ARCH_GPIO_MIDAS_H __FILE__
 
+#ifdef CONFIG_MACH_T0_CHN_CU_DUOS
+#undef CONFIG_MACH_T0_CHN_CU_DUOS
+#endif
+#ifndef CONFIG_MACH_T0_EUR_OPEN
+#define CONFIG_MACH_T0_EUR_OPEN
+#endif
+
 /* MACH_MIDAS_01_BD nor MACH_MIDAS_01_BD nomore exists
    but SLP use GPIO_MIDAS_01_BD, GPIO_MIDAS_02_BD */
 #if defined(CONFIG_GPIO_MIDAS_01_BD)
