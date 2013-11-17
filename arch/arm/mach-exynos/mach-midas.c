@@ -168,12 +168,7 @@ struct s3cfb_extdsp_lcd {
 
 #include "board-mobile.h"
 
-#ifdef CONFIG_MACH_T0_CHN_CU_DUOS
-#undef CONFIG_MACH_T0_CHN_CU_DUOS
-#endif
-#ifndef CONFIG_MACH_T0_EUR_OPEN
-#define CONFIG_MACH_T0_EUR_OPEN
-#endif
+
 
 /* Following are default values for UCON, ULCON and UFCON UART registers */
 #define SMDK4212_UCON_DEFAULT	(S3C2410_UCON_TXILEVEL |	\
