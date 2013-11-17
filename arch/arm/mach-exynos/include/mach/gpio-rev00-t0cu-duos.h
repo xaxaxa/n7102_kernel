@@ -3,13 +3,6 @@
 
 #include <mach/gpio.h>
 
-#ifdef CONFIG_MACH_T0_CHN_CU_DUOS
-#undef CONFIG_MACH_T0_CHN_CU_DUOS
-#endif
-#ifndef CONFIG_MACH_T0_EUR_OPEN
-#define CONFIG_MACH_T0_EUR_OPEN
-#endif
-
 extern void midas_config_gpio_table(void);
 extern void midas_config_sleep_gpio_table(void);
 
